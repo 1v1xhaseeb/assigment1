@@ -54,15 +54,7 @@ const Home = () => {
         </Link>
       </div>
       </div>
-      <div className='flex justify-between items-center '>
-        <h1 className='text-3xl my-8'></h1>
-        <div className='flex justify-between items-center'>
-          <Link to='/books/create'>
-            <MdOutlineAddBox className='text-sky-800 text-4xl mb-7 mx-8' />
-          </Link>
-          <Searchbar />
-        </div>
-      </div>
+     
       {loading ? (
         <LoadingComp />
       ) : showType === 'table' ? (
